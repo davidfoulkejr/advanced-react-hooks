@@ -1,0 +1,123 @@
+Arguments: 
+  /usr/local/Cellar/node@16/16.14.0/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js init
+
+PATH: 
+  /usr/local/opt/node@16/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/opt/node@16/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:137143:13)
+      at Interface.emit (node:events:520:28)
+      at Interface._ttyWrite (node:readline:1081:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:520:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:520:28)
+      at addChunk (node:internal/streams/readable:315:12)
+
+npm manifest: 
+  {
+    "name": "advanced-react-hooks",
+    "title": "Advanced React Hooks 🔥",
+    "description": "The best resources for you to learn advanced react hooks",
+    "author": "Kent C. Dodds <me@kentcdodds.com> (https://kentcdodds.com/)",
+    "version": "1.0.0",
+    "private": true,
+    "keywords": [],
+    "homepage": "https://advanced-react-hooks.netlify.com/",
+    "license": "GPL-3.0-only",
+    "main": "src/index.js",
+    "engines": {
+      "node": "12 || 14 || 15 || 16",
+      "npm": ">=6"
+    },
+    "dependencies": {
+      "@kentcdodds/react-workshop-app": "^4.3.0",
+      "@testing-library/react": "^12.1.2",
+      "@testing-library/user-event": "^13.5.0",
+      "chalk": "^4.1.2",
+      "codegen.macro": "^4.1.0",
+      "mq-polyfill": "^1.1.8",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-error-boundary": "^3.1.4"
+    },
+    "devDependencies": {
+      "@types/react": "^17.0.34",
+      "@types/react-dom": "^17.0.11",
+      "husky": "^4.3.8",
+      "npm-run-all": "^4.1.5",
+      "prettier": "^2.4.1",
+      "react-scripts": "^4.0.3"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "test:coverage": "npm run test -- --watchAll=false",
+      "test:exercises": "npm run test -- testing.*exercises\\/ --onlyChanged",
+      "setup": "node setup",
+      "lint": "eslint .",
+      "format": "prettier --write \"./src\"",
+      "validate": "npm-run-all --parallel build test:coverage lint"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "node ./scripts/pre-commit",
+        "pre-push": "node ./scripts/pre-push"
+      }
+    },
+    "jest": {
+      "collectCoverageFrom": [
+        "src/final/**/*.js"
+      ]
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "babel": {
+      "presets": [
+        "babel-preset-react-app"
+      ]
+    },
+    "browserslist": {
+      "development": [
+        "last 2 chrome versions",
+        "last 2 firefox versions",
+        "last 2 edge versions"
+      ],
+      "production": [
+        ">1%",
+        "last 4 versions",
+        "Firefox ESR",
+        "not ie < 11"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/kentcdodds/advanced-react-hooks.git"
+    },
+    "bugs": {
+      "url": "https://github.com/kentcdodds/advanced-react-hooks/issues"
+    },
+    "msw": {
+      "workerDirectory": "public"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
